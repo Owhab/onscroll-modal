@@ -16,3 +16,14 @@ document.querySelector(".popup .close-btn").addEventListener('click', function()
     document.querySelector('.popup').classList.remove('active');
     
 })
+
+
+
+// Reset the form
+document.querySelector('.form-element .submit-btn').addEventListener('click', (e)=>{
+    e.preventDefault();
+    // console.log("Submited");
+    document.querySelector('#name').value = "";
+    document.querySelector('#email').value = "";
+    document.querySelector('#tel').value = "";
+})

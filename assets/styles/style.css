@@ -90,6 +90,7 @@ body{
 }
 .popup .form .form-element input[type="email"],
 .popup .form .form-element input[type="text"],
+.popup .form .form-element input[type="tel"],
 .popup .form .form-element input[type="password"]{
     margin-top: 5px;
     display: block;
