@@ -36,7 +36,7 @@ body{
 }
 
 .popup{
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1.25);
@@ -48,13 +48,13 @@ body{
     display: none;
     transition: top 0ms ease-in-out 200ms,
                 opacity 200ms ease-in-out 0ms,
-                transform 20ms ease-in-out 0ms;
+                transform 200ms ease-in-out 0ms;
 }
 .popup.active{
     display: block;
     transform: translate(-50%, -50%) scale(1);
     top: 50%;
-    transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
+    transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms, transform 200ms ease-in-out 0ms;
 
 
 }
