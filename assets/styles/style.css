@@ -22,7 +22,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.center button{
+.center #show-login{
     padding: 10px 20px;
     font-size: 15px;
     font-weight: 600;
@@ -30,12 +30,13 @@ body{
     border: 0;
     cursor: pointer;
     color: #fff;
-    background: saddlebrown;
+    background: salmon;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .popup{
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1.25);
@@ -44,18 +45,16 @@ body{
     background: #fff;
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    opacity: 0;
+    display: none;
     transition: top 0ms ease-in-out 200ms,
                 opacity 200ms ease-in-out 0ms,
                 transform 20ms ease-in-out 0ms;
 }
 .popup.active{
-    opacity: 1;
+    display: block;
     transform: translate(-50%, -50%) scale(1);
     top: 50%;
-    transition: top 0ms ease-in-out 0ms,
-                opacity 200ms ease-in-out 0ms,
-                transform 20ms ease-in-out 0ms;
+    transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
 
 
 }
