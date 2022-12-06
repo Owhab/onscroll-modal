@@ -25,7 +25,7 @@ document.querySelector(".popup .close-btn").addEventListener('click', function()
 
 // Reset the form
 document.querySelector('.form').addEventListener('submit', (e)=>{
-    e.preventDefault();
+    // e.preventDefault();
     const name = document.querySelector('#name').value;
 
     
@@ -55,6 +55,18 @@ function nameValidation(){
     }
 }
 
+
+// Email Input Validation
+function emailValidation(){
+    var email = document.getElementById('email').value;
+    var emailPattern =/^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
+    if(emailPattern.test(email)){
+        document.getElementById('email').style.backgroundColor = "#E8F0FE"
+    }
+    else{
+        document.getElementById('email').style.backgroundColor = '#FF9E9E';
+    }
+}
 
 // Phone Number Input Validation
 function phoneValidation(){
