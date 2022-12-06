@@ -27,8 +27,6 @@ document.querySelector(".popup .close-btn").addEventListener('click', function()
 document.querySelector('.form').addEventListener('submit', (e)=>{
     // e.preventDefault();
     const name = document.querySelector('#name').value;
-
-    
     const email = document.querySelector('#email').value;
     const phone = document.querySelector('#tel').value;
     //  userSubmit = true
