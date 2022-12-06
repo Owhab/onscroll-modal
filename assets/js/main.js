@@ -43,12 +43,25 @@ document.querySelector('.form').addEventListener('submit', (e)=>{
 })
 
 
+// Name Input Validation
+function nameValidation(){
+    var name = document.getElementById('name').value;
+    var namePattern = /^[a-zA-Z]+ [a-zA-Z]+$/;
+    if(namePattern.test(name)){
+        document.getElementById('name').style.backgroundColor = '#E8F0FE'
+    }
+    else{
+        document.getElementById('name').style.backgroundColor = '#FF9E9E'
+    }
+}
+
+
 // Phone Number Input Validation
-function validation(){
+function phoneValidation(){
     var phone = document.getElementById('tel').value;
     var mobileNumberPattern = /^[0-9]{11}$/;
     if(mobileNumberPattern.test(phone)){
-        document.getElementById('tel').style.backgroundColor = '#fff'
+        document.getElementById('tel').style.backgroundColor = '#E8F0FE'
     }
     else{
         document.getElementById('tel').style.backgroundColor = '#FF9E9E'

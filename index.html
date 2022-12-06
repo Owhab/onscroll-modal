@@ -25,7 +25,7 @@
             <p>Plus, get access to special discounts, deals, and wellness ideas</p>
             <div class="form-element">
                 <label for="name">Name: </label>
-                <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" onkeyup="nameValidation()" required>
 
             </div>
             <div class="form-element">
@@ -35,7 +35,7 @@
             </div>
             <div class="form-element">
                 <label for="tel">Phone</label>
-                <input onkeyup="validation()" type="tel" name="tel" id="tel" placeholder="01XXXXXXXXX" required>
+                <input onkeyup="phoneValidation()" type="tel" name="tel" id="tel" placeholder="01XXXXXXXXX" required>
             </div>
             <div class="form-element">
                 <button type="submit" class="submit-btn">Submit</button>
