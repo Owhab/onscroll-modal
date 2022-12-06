@@ -74,8 +74,13 @@ body{
 .popup .form h2{
     text-align: center;
     color: #222;
-    margin: 10px 0 20px;
-    font-size: 25px;
+    margin: 10px 0x;
+    font-size: 22px;
+}
+.popup .form p{
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0;
 }
 
 .popup .form .form-element{
@@ -86,6 +91,7 @@ body{
 .popup .form .form-element label{
     font-size: 15px;
     color: #222;
+    font-weight: bold;
 
 }
 .popup .form .form-element input[type="email"],
